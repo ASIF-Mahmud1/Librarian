@@ -9,17 +9,20 @@ var library = [
 
 /* Task 1 */
 function getBookTitle( index ){
-  //add code
+  var  titl= library[index].title;
+  return titl;
 }
 
-console.log(getBookTitle(3));
+console.log(getBookTitle(0));
+console.log(getBookTitle(1));
 
 /* Task 3 */
 function addBook( book ){
-  //add code
+  library.push(book);
+  return library;
 }
 
-var newBook = {};
+var newBook = {title: "The ", year: "1999", author: "Andy Hunt and Dave Thomas", publisher: "The Pragmatic Bookshelf  "};
 console.log(addBook(newBook));
 
 /* Task 4 */
@@ -33,6 +36,7 @@ console.log(bookByAuthor());
 function findByTitle( title ){
   //add code
 }
+
 
 console.log(findByTitle("man"));
 console.log(findByTitle("myth"));
